@@ -1,0 +1,13 @@
+extends base
+
+block content 
+  section
+    form.login
+      .form-group
+        label(for="email") Email address
+        input#email.form-control(type="email", aria-describedby="emailHelp", placeholder="Enter email")
+      .form-group
+        label(for="password") Password
+        input#password.form-control(type="password", placeholder="Password")
+      button.btn.btn-primary Submit
+  

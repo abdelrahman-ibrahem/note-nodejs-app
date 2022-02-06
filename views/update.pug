@@ -1,0 +1,15 @@
+extends base
+
+
+block content 
+  section.products
+    div
+      form.update(action=`/update/${note._id}/` , method="post")
+        .form-group
+          label(for="title") title
+          input.form-control(type="text" , name="title" , value=`${note.title}`)
+        .form-group
+          label(for="note") note
+          input.form-control(type="text",name="note" ,  value=`${note.note}`)
+        button.btn.btn-primary(type="submit") Submit
+  

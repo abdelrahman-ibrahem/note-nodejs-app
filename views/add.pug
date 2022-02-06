@@ -1,0 +1,15 @@
+extends base
+
+
+block content 
+  section.products
+    div
+      form.add(action="/add" , method="post")
+        .form-group
+          label(for="title") title
+          input.form-control(type="text" , name="title" , placeholder="Enter the title")
+        .form-group
+          label(for="note") note
+          input.form-control(type="text",name="note" ,  placeholder="Enter the note")
+        button.btn.btn-primary(type="submit") Submit
+  
